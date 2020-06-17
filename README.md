@@ -22,6 +22,10 @@ ruby_and_rails_templates
 └─── reek
 |    |
 |    └─── default/.reek.yml
+|
+└─── rubycritic
+|    |
+|    └─── default/.rubycritic.yml
 │
 └─── readme_templates
     │
