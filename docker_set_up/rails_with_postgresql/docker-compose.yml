@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: webapp
+    env_file: ./docker-compose.env
+    volumes:
+      - .:/webapp
+      - /webapp/vendor
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgresql
+    networks:
+      - webapp-network
+    tty: true
+    stdin_open: true
+
+  postgresql:
+    image: postgres:10.0-alpine
+    networks:
+      - webapp-network
+    ports:
+      - 5432:5432
+
+  redis:
+    image: 'redis:4.0-alpine'
+    ports:
+      - "6379:6379"
+    networks:
+      - webapp-network
+
+networks:
+  webapp-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.2.0/24
