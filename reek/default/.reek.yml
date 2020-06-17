@@ -1,0 +1,10 @@
+---
+
+### Generic smell configuration
+
+detectors:
+  DuplicateMethodCall:
+    max_calls: 2
+
+  NestedIterators: 
+    ignore_iterators: [success, failure]
