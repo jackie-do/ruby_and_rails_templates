@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: webapp
+    env_file: ./docker-compose.env
+    volumes:
+      - .:/webapp
+      - /webapp/vendor
+      - /webapp/.bundle
+    ports:
+      - "4545:3000"
+    depends_on:
+      - mongodb
+    networks:
+      - webapp-network
+      - backend_backend-network
+
+  mongodb:
+    image: mongo:latest
+    networks:
+      - webapp-network
+    ports:
+      - 27017
+
+networks:
+  webapp-network:
+     driver: bridge
+     ipam:
+       config:
+         - subnet: 172.25.50.0/24
+  backend_backend-network:
+    external: true
