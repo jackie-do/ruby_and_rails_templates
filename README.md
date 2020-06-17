@@ -8,6 +8,16 @@ Store templates and config files for reuse in future.
 ```
 ruby_and_rails_templates
 │
+│
+└─── docker_set_up
+|   |
+|   └─── rails_with_mongo
+|   |
+|   └─── rails_with_postgresql
+|   
+|   
+└─── code_review_set_up
+│
 └─── rubocop                       (Ruby static code analyzer and formatter)
 │   │
 │   └─── default
