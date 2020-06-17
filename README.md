@@ -8,22 +8,22 @@ Store templates and config files for reuse in future.
 ```
 ruby_and_rails_templates
 │
-└─── rubocop
+└─── rubocop                       (Ruby static code analyzer and formatter)
 │   │
 │   └─── default
 |       |
 │       └─── .rubocop_base.yml
 │       └─── .rubocop.yml
 |
-└─── fasterer
+└─── fasterer                      (Ruby suggest some speed improvements)
 |    |
 |    └─── default/.fasterer.yml
 |
-└─── reek
+└─── reek                          (Code smell detector for Ruby)
 |    |
 |    └─── default/.reek.yml
 |
-└─── rubycritic
+└─── rubycritic                    (Ruby code quality reporter)
 |    |
 |    └─── default/.rubycritic.yml
 │
