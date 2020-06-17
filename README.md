@@ -11,17 +11,17 @@ ruby_and_rails_templates
 └─── rubocop
 │   │
 │   └─── default
-│   │   │  .rubocop.yml
-│   │
-│   └─── hanami
-│   │   │  .rubocop.yml
-│   │
-│   └─── rails
-│   │   │  .rubocop.yml
-│   │
-│   └─── sinatra
-│       │  .rubocop.yml
-│
+|       |
+│       └─── .rubocop_base.yml
+│       └─── .rubocop.yml
+|
+└─── fasterer
+|    |
+|    └─── default/.fasterer.yml
+|
+└─── reek
+|    |
+|    └─── default/.reek.yml
 │
 └─── readme_templates
     │
