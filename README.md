@@ -17,30 +17,30 @@ ruby_and_rails_templates
 |   
 |   
 └─── code_review_set_up
-│
-└─── rubocop                       (Ruby static code analyzer and formatter)
-│   │
-│   └─── default
-|       |
-│       └─── .rubocop_base.yml
-│       └─── .rubocop.yml
-|
-└─── fasterer                      (Ruby suggest some speed improvements)
-|    |
-|    └─── default/.fasterer.yml
-|
-└─── reek                          (Code smell detector for Ruby)
-|    |
-|    └─── default/.reek.yml
-|
-└─── rubycritic                    (Ruby code quality reporter)
-|    |
-|    └─── default/.rubycritic.yml
-│
+|   │
+|   └─── rubocop                       (Ruby static code analyzer and formatter)
+|   |   │   
+|   │   └─── default
+|   |       |
+|   │       └─── .rubocop_base.yml
+|   │       └─── .rubocop.yml
+|   |
+|   └─── fasterer                      (Ruby suggest some speed improvements)
+|   |    |
+|   |    └─── default/.fasterer.yml
+|   |
+|   └─── reek                          (Code smell detector for Ruby)
+|   |    |
+|   |    └─── default/.reek.yml
+|   |
+|   └─── rubycritic                    (Ruby code quality reporter)
+|        |
+|        └─── default/.rubycritic.yml
+|   
 └─── readme_templates
     │
     └─── default
         │ README.md
 ```
-### 1) **Using `rubocop` config file**
+
 
