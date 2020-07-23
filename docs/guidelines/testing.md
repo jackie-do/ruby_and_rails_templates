@@ -12,31 +12,30 @@ Plus, it also covers so many of the edge cases that it drives out a much better 
 
 
 Let’s list some benefits of testing:
+- Tests acts as detailed specifications of a feature or application.
+- Tests acts as a documentation for other devs, which helps them understand your intent in an implementation.
+- Tests helps in catching and fixing bugs beforehand.
+- Tests gives you confidence when refactoring code or making performance enhancements that nothing is broken as a result.
 
-Tests acts as detailed specifications of a feature or application.
-Tests acts as a documentation for other devs, which helps them understand your intent in an implementation.
-Tests helps in catching and fixing bugs beforehand.
-Tests gives you confidence when refactoring code or making performance enhancements that nothing is broken as a result.
 
 
 All classes and modules must be covered by the tests and the elements to be tested are :
-
-The controllers
-The Requests
-The models
-The services
-Validation contracts
-The queries objects
-The libs
-Routing
-Jobs and workers
-Serializers or view
-Mailers
+- **The controllers**
+- **The Requests**
+- **The models**
+- **The services**
+- **Validation contracts**
+- **The queries objects**
+- **The libs**
+- **Routing**
+- **Jobs and workers**
+- **Serializers or view**
+- **Mailers**
 
 
 The tests must cover all cases of use of the tested element in case of success and failure.
 
-The test tool is Rspec and its use must respect the rules described in this guide (https://rspec.rubystyle.guide/), and you should stub all external services http requests with VCR.
+The test tool is **Rspec** and its use must respect the rules described in this guide (https://rspec.rubystyle.guide/), and you should stub all external services http requests with **VCR**.
 
 
 
