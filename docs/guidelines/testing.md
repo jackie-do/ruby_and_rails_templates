@@ -1,4 +1,4 @@
-if you are familiar with Rails, then you know how much emphasis the Rails community puts on testing. I’ve heard people say that, as a newbie, testing makes it difficult to learn Rails.
+If you are familiar with Rails, then you know how much emphasis the Rails community puts on testing. I’ve heard people say that, as a newbie, testing makes it difficult to learn Rails.
 
 Also, some say it makes sense to get on with the basics of Rails (or in some cases general web development) first.
 
