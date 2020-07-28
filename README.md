@@ -44,3 +44,4 @@ ruby_and_rails_templates
 ```
 
 
+https://evilmartians.com/chronicles/anycable-1-0-four-years-of-real-time-web-with-ruby-and-go
