@@ -64,10 +64,40 @@ We reserve the footer for breaking changes and we also refer to the error tick
 ### Smile (Emoji Icons)
 We see more and more the use of emojis in commits. [Gitmoji](https://gitmoji.carloscuesta.me/) is a project that aims to define a style guide for the use of emojis in commits.
 
+![Image of Smile](https://github.com/jackiedo91/ruby_and_rails_templates/blob/master/docs/images/git-emojis-hooks.png)
 
+Emojis can quickly and visually convey meaning. Plus, a little fun in the posts can't hurt.
+
+On the other hand, using too wide a palette of emojis in subjects can lead to confusion as it is not always obvious that 🚀 relates to deployment.
+
+So I only use a limited number of icons that correspond to the different types of commits.
+
+In addition, I prefer the use of emojis in Unicode format rather than using Markdown codes. Thus, emojis are displayed in all environments that support Unicode - which is much more common than environments that support Markdown.
 
 
 ## Examples of commits
 
+```bash
+feature(student): import student from CSV file
 
+Added the possibility to create or update a contact with the custom fields.
+The changes are :
+    - contracts
+    - services
+    - serializers
+
+link: https://jira.com/browse/ABC-120
+refs: ABC-120
+```
+
+
+```bash
+fix(note): note update error
+
+Fix error occured pending not update and add more test case.
+
+link: https://jira.com/browse/ABC-123
+refs: ABC-123
+fixes: 52
+```
 
